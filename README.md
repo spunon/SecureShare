@@ -2,7 +2,7 @@
 
 1.) This system utilizes apache web server's .htaccess and .htpasswd systems as well as mod_rewrite, so you'll need a server running apache web server for this program to function correctly.
 
-2.) This system relies on a working SSL certificate being installed and configured for your site. All generated URIs are HTTPS. All uploaded folders are mod_rewritten to HTTPS by design.
+2.) This system relies on a working SSL certificate being installed and configured for your site. All generated URIs are HTTPS. All uploaded folders are mod_rewritten to HTTPS by design. Also be sure to adjust your max_upload and max_post sizes in your PHP.INI file.
 
 3.) After extracting this zip file and upload the 'secureshare' directory into the root of your web servers html folder. (e.g. /var/www/html/secureshare)
 
