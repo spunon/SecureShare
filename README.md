@@ -14,4 +14,6 @@
 
 Release Notes:
 
+2/9/16 - Started playing around with github
+
 2/8/16 - Later releases will have user definable security around where uploads can originate from, a configuration UI, more metadata, as well as an auto-pruning function that kills off old files as new files are added.
