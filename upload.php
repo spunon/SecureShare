@@ -35,8 +35,8 @@
 			$url = "$org_uri/$uploadpath/$dir/";
 			//make the new directory based on the random name, then chmod the 
 			//directory to make it readable to everyone.
-			mkdir($makepath,0755);
-			chmod($makepath,0755);
+			mkdir($makepath,0775);
+			chmod($makepath,0775);
 
 			//define information for the .htaccess file in newly created directory
 			//this will require that a username and password be given to access 
@@ -82,7 +82,7 @@
 			//save form data to metadata.txt in newly created directory, then chmod the 
 			//file to make it readable to everyone.
 			file_put_contents("$makepath/metadata.txt", $metadata);
-			chmod($makepath . '/metadata.txt',0755);
+			chmod($makepath . '/metadata.txt',0775);
 
 			//create variables for target path, fullurl and filename based on the original file neme
 			//then replace spaces with dashes because the internet be a bitch y'all
@@ -95,7 +95,7 @@
 
 			//if the file uploaded and is moveable, move it out of /tmp and intothe directory we created for it
 			if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
-				chmod($target_path,0755);
+				chmod($target_path,0775);
 				
 					//echo success message to be displayed on page and emailed.
 					echo '<p>The file ' . $filename . ' has been uploaded and shared with you.</p>
