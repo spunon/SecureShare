@@ -14,6 +14,8 @@
 
 Release Notes:
 
+5/12/2016 - Testing Clone and Push
+
 2/25/16 - Updated permissions of uploaded files.
 
 2/8/16 - Later releases will have user definable security around where uploads can originate from, a configuration UI, more metadata, as well as an auto-pruning function that kills off old files as new files are added.
